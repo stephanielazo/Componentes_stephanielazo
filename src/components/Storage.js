@@ -1,7 +1,7 @@
 // src/components/Storage.js
 import React, { Component } from 'react';
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { storage } from '../firebase'; // ⚡ asegúrate que la ruta es correcta
+import { storage } from '../firebase'; 
 
 class Storage extends Component {
   constructor(props) {

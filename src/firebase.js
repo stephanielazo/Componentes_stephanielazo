@@ -9,7 +9,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyAyqq0MaYqyvg3FkFB-tOeF2pvNkX1i7W4",
   authDomain: "examen-stephanielazo.firebaseapp.com",
   projectId: "examen-stephanielazo",
-  storageBucket: "examen-stephanielazo-1296b.firebasestorage.app", // ⚡ bucket CORRECTO
+  storageBucket: "examen-stephanielazo-1296b.firebasestorage.app", 
   messagingSenderId: "104663182658",
   appId: "1:104663182658:web:e2d358b9a7aaf1e7bfecdb"
 };

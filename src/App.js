@@ -23,11 +23,11 @@ function App() {
         <Formulario />
       </section>
 
-      {/* Ejercicio 3: Auth y Storage lado a lado */}
+      {/* Ejercicio 3: */}
       <section className="mb-5">
         <h2 className="mb-3 text-center">Firebase</h2>
         <div className="row">
-          {/* Auth al lado izquierdo */}
+          
           <div className="col-md-6 d-flex justify-content-center">
             <div className="w-100">
               <h4 className="text-center mb-3">Identificación</h4>
@@ -35,7 +35,7 @@ function App() {
             </div>
           </div>
 
-          {/* Storage al lado derecho */}
+          
           <div className="col-md-6 d-flex justify-content-center">
             <div className="w-100">
               <h4 className="text-center mb-3">Subida de Archivos</h4>

@@ -1,23 +1,18 @@
-/* ============================
-   Contenedor principal
-   ============================ */
 .App {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;       /* apila elementos verticalmente */
-  justify-content: flex-start;  /* empieza desde arriba */
-  align-items: center;          /* centra horizontalmente */
+  flex-direction: column;       
+  justify-content: flex-start;  
+  align-items: center;        
   text-align: center;
-  padding-top: 40px;            /* espacio desde el borde superior */
-  gap: 40px;                    /* espacio entre secciones */
+  padding-top: 40px;           
+  gap: 40px;                   
   font-family: Arial, sans-serif;
-  font-size: 1.6rem;            /* más uniforme para desktop y móvil */
+  font-size: 1.6rem;            
   background-color: #f9f9f9;
 }
 
-/* ============================
-   Lista de productos
-   ============================ */
+
 .lista-productos {
   display: flex;
   flex-direction: column;
@@ -27,7 +22,7 @@
   max-width: 500px;
 }
 
-/* Producto individual con más espacio entre nombre y botón */
+
 .producto {
   display: flex;
   justify-content: space-between;
@@ -45,9 +40,7 @@
   transform: translateY(-2px);
 }
 
-/* ============================
-   Botones
-   ============================ */
+
 button {
   padding: 10px 20px;
   font-size: 1.4rem;
@@ -64,9 +57,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* ============================
-   Carrito
-   ============================ */
+
 .carrito {
   display: flex;
   flex-direction: column;
@@ -86,9 +77,7 @@ button:hover {
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
-/* ============================
-   Formulario
-   ============================ */
+
 form {
   display: flex;
   flex-direction: column;
@@ -120,17 +109,13 @@ label {
   margin-bottom: 5px;
 }
 
-/* ============================
-   Mensajes de validación
-   ============================ */
+
 .validation-message {
   color: red;
   font-size: 1rem;
 }
 
-/* ============================
-   Responsividad
-   ============================ */
+
 @media (max-width: 600px) {
   .App {
     font-size: 1.2rem;
