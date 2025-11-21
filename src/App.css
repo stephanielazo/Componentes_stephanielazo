@@ -1,38 +1,150 @@
+/* ============================
+   Contenedor principal
+   ============================ */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;       /* apila elementos verticalmente */
+  justify-content: flex-start;  /* empieza desde arriba */
+  align-items: center;          /* centra horizontalmente */
+  text-align: center;
+  padding-top: 40px;            /* espacio desde el borde superior */
+  gap: 40px;                    /* espacio entre secciones */
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;            /* más uniforme para desktop y móvil */
+  background-color: #f9f9f9;
+}
+
+/* ============================
+   Lista de productos
+   ============================ */
+.lista-productos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 25px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Producto individual con más espacio entre nombre y botón */
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.producto:hover {
+  transform: translateY(-2px);
+}
+
+/* ============================
+   Botones
+   ============================ */
+button {
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
   color: white;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ============================
+   Carrito
+   ============================ */
+.carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.carrito div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   Formulario
+   ============================ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* ============================
+   Mensajes de validación
+   ============================ */
+.validation-message {
+  color: red;
+  font-size: 1rem;
+}
+
+/* ============================
+   Responsividad
+   ============================ */
+@media (max-width: 600px) {
+  .App {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+
+  form {
+    width: 95%;
+    padding: 15px;
   }
 }
